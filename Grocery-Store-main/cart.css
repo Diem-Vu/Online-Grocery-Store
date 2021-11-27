@@ -1,0 +1,14 @@
+.container img {
+  width: 250px;
+  background-color: white;
+  background: radial-gradient(white 100%);
+}
+
+.fa-star, .fa-star-half{
+  color: yellowgreen;
+  padding: 3% 0;
+}
+
+.price-details h6{
+  padding: 3% 2%;
+}

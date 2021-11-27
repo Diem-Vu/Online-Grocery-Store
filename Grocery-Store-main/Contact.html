@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-pBSmXxXPFYzJk_BEdvuZUeIaz3Tcd0g&callback=initMap&libraries=&v=weekly"
+      defer
+    >
+    </script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 300px;
+        /* The height is 400 pixels */
+        width: 50%;
+        /* The width is the width of the web page */
+        /* margin-left:auto;
+        margin-right:auto; */
+
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 37.3337, lng: -121.8907 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./img/logo (2).jpg" alt="">
+        <h4 class = "logo">Grocery Store</h4>
+      </div>
+      <nav>
+        <ul class="nav-links-left">
+          <li class="nav-link"><a href="index.html">Home</a></li>
+          <li class="nav-link"><a href="categories.html">Categories</a></li>
+          <li class="nav-link"><a href="About.html">About</a></li>
+          <li class="nav-link"><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+          <!--- SEARCH BAR IS HERE--------------------------------------------------------------------
+      <div class="topnav">
+        <div class="search-container">
+          <form action = "/Grocery/htdocs/process.php" method = "post">
+            <input type="text" class = "search-bar" placeholder="Search your item..." name="search" >
+            <button type="submit" class ="submit-button" ><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- END SEARCH BAR --------------------------------------------------------------------------------->
+      <div class="nav-links-right">
+        <ul>
+         <!-- <li class="nav-link-right"><a href="#">Login/Sign Up</a></li>-->
+          <!-- DIEM'S CHANGE to link shoppingbag page-->
+          <li class="nav-link-right"><a href="viewCart.php"><img src="./img/cart.svg" alt="cart"></a></li>
+        </ul>
+      </div>
+    </header>
+    <br>
+
+    <div class="main-text">
+      <h1>Contact Us</h1>
+    </div>
+
+    <section>
+    <a>
+    <div style="padding-left:200px; padding-right:200px; padding-top:25px; padding-bottom:150px;">
+
+      <p> Got any questions about our inventory or online shopping experience? Feel free to contact us! </p>
+      <br>
+      <b style="font-size:120%; "> CALL US AT </b>
+      <br>
+      <br>
+      <p style="text-indent: 20px; ">(###)###-####  </p>
+      <br>
+      <b style="font-size:120%;"> EMAIL US AT  </b>
+      <br>
+      <br>
+      <p style="text-indent: 20px; "> questions@ofs-sj.com  </p>
+      <br>
+      <b style="font-size:120%;"> VIST OUR STORE AT  </b>
+      <br>
+      <br>
+      <p style="text-indent: 20px; ">  ### West Santa Clara Street </p>
+      <p style="text-indent: 20px; "> San Jose CA, 95113 </p>
+      <br>
+      <div style="padding-left:200px; padding-right:200px; padding-top:25px; padding-bottom:100px;" id="map"></div>
+      <br>
+      <br>
+      <p style="text-align:center; font-size:120%; "> We would be happy to answer all the questions or concerns you may have!  </p>
+
+    </div>
+
+    </a>
+    </section>
+
+  </body>
+</html>

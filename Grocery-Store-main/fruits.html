@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./img/logo (2).png" alt="">
+        <h4 class = "logo">Grocery Store</h4>
+      </div>
+      <nav>
+        <ul class="nav-links-left">
+          <li class="nav-link"><a href="index.php">Home</a></li>
+          <li class="nav-link"><a href="categories.html">Categories</a></li>
+          <li class="nav-link"><a href="About.html">About</a></li>
+          <li class="nav-link"><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--- SEARCH BAR IS HERE--------------------------------------------------------------------->
+  <div class="topnav">
+    <div class="search-container">
+      <form action = "/Grocery/htdocs/process.php" method = "post">
+        <input type="text" class = "search-bar" placeholder="Search your item..." name="search" >
+        <button type="submit" class ="submit-button" ><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <!-- END SEARCH BAR --------------------------------------------------------------------------------->
+      <div class="nav-links-right">
+        <ul>
+          <li class="nav-link-right"><a href="#">Login/Sign Up</a></li>
+          <li class="nav-link-right"><a href="#"><img src="./img/cart.svg" alt="cart"></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="banner">
+      <h1 class="banner-text"></h1>
+      <img src="img\banner2.jpg" class="banner1">
+    </div>
+    <div class="main-text">
+      <h1>Organic Fruits</h1>
+    </div>
+    <div class="categories">
+    <div class="row">
+        <div class = "column">
+        <a href="Fruits/avocado.html" class="category-item"><img src="Fruits/avocado.jpg"><h3>Avocado</h3></a>
+        </div>
+        <div class="column">
+          <a href="Fruits/Banana.html" class="category-item"><img src="Fruits/Banana.jpg"><h3>Banana</h3></a>
+        </div>
+        <div class="column">
+        <a href="Fruits/blueberries.html" class="category-item"><img src="Fruits/blueberries.jpg"><h3>Blue Berries</h3></a>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class = "column">
+            <a href="Fruits/grapes.html" class="category-item"><img src="Fruits/grapes.jpg"><h3>Grapes</h3></a>
+            </div>
+            <div class="column">
+              <a href="Fruits/Honeycrisp.html" class="category-item"><img src="Fruits/Honeycrisp Apple.jpg"><h3>Honeycrips Apple</h3></a>
+            </div>
+            <div class="column">
+            <a href="Fruits/kiwi.html" class="category-item"><img src="Fruits/kiwi.jpg"><h3>Kiwi</h3></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class = "column">
+            <a href="Fruits/orange.html" class="category-item"><img src="Fruits/orange.jpg"><h3>Orange</h3></a>
+            </div>
+            <div class="column">
+              <a href="Fruits/papaya.html" class="category-item"><img src="Fruits/papaya.jpg"><h3>Payaya</h3></a>
+            </div>
+            <div class="column">
+            <a href="Fruits/pear.html" class="category-item"><img src="Fruits/pear.jpg"><h3>Pear</h3></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class = "column">
+          <a href="Fruits/strawberries.html" class="category-item"><img src="Fruits/strawberries.jpg"><h3>Stawberries</h3></a>
+            </div>
+          </div>
+
+
+    </div>
+  </body>
+</html>

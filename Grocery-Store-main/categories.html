@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./img/logo (2).jpg" alt="">
+        <h4 class = "logo">Grocery Store</h4>
+      </div>
+      <nav>
+        <ul class="nav-links-left">
+          <li class="nav-link"><a href="index.html">Home</a></li>
+          <li class="nav-link"><a href="categories.html">Categories</a></li>
+          <li class="nav-link"><a href="About.html">About</a></li>
+          <li class="nav-link"><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--- SEARCH BAR IS HERE--------------------------------------------------------------------->
+ <div class="topnav">
+        <div class="search-container">
+          <form action = "./actionSearch.php" method = "post">
+            <input type="text" class = "search-bar" placeholder="Search your item..." name="searchItem" >
+            <button type="submit" class ="submit-button" ><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+  <!-- END SEARCH BAR --------------------------------------------------------------------------------->
+      <div class="nav-links-right">
+        <ul>
+         <!-- <li class="nav-link-right"><a href="#">Login/Sign Up</a></li>-->
+          <!-- DIEM'S CHANGE to link shoppingbag page-->
+          <li class="nav-link-right"><a href="viewCart.php"><img src="./img/cart.svg" alt="cart"></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="banner">
+      <h1 class="banner-text"></h1>
+      <img src="img\banner2.jpg" class="banner1">
+    </div>
+    <div class="main-text">
+      <h1>Categories</h1>
+    </div>
+    <div class="categories">
+      <div class="row">
+          <div class = "column">
+          <a href="cat_beverages.php" class="category-item"><img src="Categories Picture/beverages.jpg"><h3>Organic Beverages</h3></a>
+          </div>
+          <div class="column">
+            <a href="cat_dairy.php" class="category-item"><img src="Categories Picture/daily.jpg"><h3>Organic Dairy</h3></a>
+          </div>
+          <div class="column">
+          <a href="cat_meat.php" class="category-item"><img src="Categories Picture/deli.jpg"><h3>Organic Meat</h3></a>
+          </div>
+          </div>
+
+          <div class="row">
+              <div class = "column">
+              <a href="cat_fruits.php" class="category-item"><img src="Categories Picture/fruit.jpg"><h3>Organic Fruit</h3></a>
+              </div>
+              <div class="column">
+                <a href="cat_snacks.php" class="category-item"><img src="Categories Picture/snacks.jpg"><h3>Organic Snacks</h3></a>
+              </div>
+              <div class="column">
+              <a href="cat_vegetables.php" class="category-item"><img src="Categories Picture/download.jpg"><h3>Organic Vegetables</h3></a>
+              </div>
+          </div>
+    </div>
+  </body>
+</html>
