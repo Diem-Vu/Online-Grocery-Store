@@ -1,0 +1,77 @@
+/* For devices larger than 550px */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media (min-width: 550px) {
+
+  .column,
+  .columns {
+    margin-left: 4%;
+    float: left;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Utilities
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .u-full-width {
+    width: 100%;
+    box-sizing: border-box; }
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box; }
+  .u-pull-right {
+    float: right;}
+  .u-pull-left {
+    float: left; }
+  .relative {
+      position: relative;
+    }
+
+  /*  ---------------------------------------------------*/
+    /**
+     * Remove the gray background color from active links in IE 10.
+     */
+    a {
+      background-color: transparent;
+    }
+    /**
+     * Improve readability when focused and also mouse hovered in all browsers.
+     */
+
+    a:active,
+    a:hover {
+      outline: 0;
+    }
